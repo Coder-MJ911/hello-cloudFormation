@@ -2,6 +2,10 @@
 
 *hello cloudformation*
 
+work flow:
+![image](https://github.com/Ma-Jiajie/AnyPictures/blob/master/hello-cloudformation.png)
+
+
 ```html
 Basic
 What is serverless?
