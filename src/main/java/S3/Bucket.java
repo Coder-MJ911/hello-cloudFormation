@@ -5,13 +5,13 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 
-public class PutObject {
+public class Bucket {
 
     private final String bucketName;
     private final String keyName;
     final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.AP_SOUTHEAST_2).build();
 
-    public PutObject(String bucket_name, String key_name) {
+    public Bucket(String bucket_name, String key_name) {
         this.bucketName = bucket_name;
         this.keyName = key_name;
     }
