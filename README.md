@@ -3,7 +3,7 @@
 *hello cloudformation*
 
 work flow:
-![image](https://github.com/Ma-Jiajie/AnyPictures/blob/master/hello-cloudformation.png)
+![image](https://github.com/Ma-Jiajie/AnyPictures/blob/master/hello-lambda.png)
 
 
 ```html
