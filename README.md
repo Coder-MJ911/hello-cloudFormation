@@ -5,6 +5,18 @@
 work flow:
 ![image](https://github.com/Ma-Jiajie/AnyPictures/blob/master/hello-lambda.png)
 
+How to deploy a stack:
+```shell
+brew install serverless
+```
+
+```shell
+saml2aws login --profile tw-aws-beach
+```
+
+```shell
+sls deploy
+```
 
 ```html
 Basic
