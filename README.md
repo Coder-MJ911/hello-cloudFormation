@@ -3,7 +3,7 @@
 *hello cloudformation*
 
 work flow:
-![image](https://github.com/Ma-Jiajie/AnyPictures/blob/master/hello-lambda.png)
+![image](https://github.com/Ma-Jiajie/AnyPictures/blob/master/hello-cf.png)
 
 How to deploy a stack:
 ```shell
