@@ -12,6 +12,8 @@ provider:
         - lambda:InvokeFunction
         - s3:PutObject
         - s3:GetObject
+        - sns:Publish
+        - logs:*
       Resource: "*"
 
 package:
