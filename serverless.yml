@@ -20,8 +20,13 @@ package:
   artifact: build/libs/hello-cloudFormation-1.0-SNAPSHOT.jar
 
 functions:
+  index:
+    handler: lambda.backoffice
+    events:
+      - http: GET send
+
   Lambda1:
-    handler: lambda.Lambda1::handleRequest
+    handler: lambda.Lambda1
     timeout: 900
     reservedConcurrency: 100
     events:
@@ -30,12 +35,12 @@ functions:
           topicName: SuperTopic
 
   Lambda2:
-    handler: lambda.Lambda2::handleRequest
+    handler: lambda.Lambda2
     timeout: 900
     reservedConcurrency: 100
 
   Lambda3:
-    handler: lambda.Lambda3::handleRequest
+    handler: lambda.Lambda3
     timeout: 900
     reservedConcurrency: 100  #ReservedConcurrentExecutions(AWS)
     events:

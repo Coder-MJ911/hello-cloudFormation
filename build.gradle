@@ -21,6 +21,7 @@ dependencies {
         compile group: 'com.amazonaws', name: 'aws-lambda-java-log4j', version: '1.0.0'
         compile group: 'com.amazonaws', name: 'aws-lambda-java-events', version: '2.2.7'
         compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.923'
+        compile 'com.googlecode.json-simple:json-simple:1.1.1'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-sts', version: '1.11.924'
     compile group: 'com.amazonaws', name: 'aws-java-sdk-iam', version: '1.11.924'
 //    compile group: 'org.bouncycastle', name: 'bcprov-jdk16', version: '1.46'
