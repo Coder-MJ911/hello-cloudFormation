@@ -18,12 +18,12 @@ public class Lambda2 implements RequestHandler<Map<String, String>, String> {
         //S3 object key
         String key = new Date() + "from lambda2";
         //S3 object name
-        String bucketName = "lambda2s3";
+        String bucketName = "lambda2s3new";
 
         //save to S3
         Bucket s3 = new Bucket(bucketName, key);
         s3.save(response);
-        logger.log("save to lambda2S3 bucket done: key = " + key + "value = " + request);
+        logger.log("save to lambda2s3new bucket done: key = " + key + "value = " + request);
         return "";
     }
 }

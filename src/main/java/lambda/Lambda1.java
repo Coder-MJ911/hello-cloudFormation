@@ -26,7 +26,7 @@ public class Lambda1 implements RequestHandler<SNSEvent, String> {
         //S3 object key
         String key = new Date() + "from lambda1";
         //S3 object name
-        String bucketName = "lambda1s3";
+        String bucketName = "lambda1s3new";
 
         //save to S3
         Bucket s3 = new Bucket(bucketName, key);
@@ -35,14 +35,14 @@ public class Lambda1 implements RequestHandler<SNSEvent, String> {
 
         //trigger lambda2 to get msg from S3
         final String DEFAULT_LAMBDA_REGION = "ap-southeast-2";
-        final String LAMBDA_FUNCTION_NAME = "AWSLambdaAndSqs-dev-lambda.Lambda2";
+        final String LAMBDA_FUNCTION_NAME = "AWSSelfLearning-dev-Lambda2New";
 
         AWSLambda client = AWSLambdaAsyncClient.builder().withRegion(DEFAULT_LAMBDA_REGION).build();
         InvokeRequest request = new InvokeRequest();
 
         //get from S3 bucket
         String payload = s3.get(bucketName, key);
-        logger.log("get from lambda1S3 bucket done: key = " + key + "value = " + payload);
+        logger.log("get from lambda1s3new bucket done: key = " + key + "value = " + payload);
 
         //trigger lambda2
         request.withFunctionName(LAMBDA_FUNCTION_NAME).withPayload("{\"payload\": \"" + payload + "\"}");
