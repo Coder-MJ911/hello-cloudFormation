@@ -22,7 +22,7 @@ public class backoffice implements RequestStreamHandler {
             if (!eventBody.equals("")) {
                 System.out.println(new LocalDate() + "Body from request: " + eventBody);
             }
-            AmazonSNS snsClient = AmazonSNSClientBuilder.standard().withRegion(Regions.AP_NORTHEAST_2).build();
+            AmazonSNS snsClient = AmazonSNSClientBuilder.standard().withRegion(Regions.AP_SOUTHEAST_2).build();
             String topic = "arn:aws:sns:ap-southeast-2:160071257600:MyCustomTopic";
             snsClient.publish(topic, eventBody);
         } catch (ParseException e) {
